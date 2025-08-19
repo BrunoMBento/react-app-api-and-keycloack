@@ -1,13 +1,31 @@
-# React + TypeScript + Vite
+# Painéis Atendimento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Essa aplicação tem o objetivo de **complementar** os [relatórios](https://atendimento.camara.leg.br/omnichannel/reports) e [dashboards](https://atendimento.camara.leg.br/omnichannel/realtime-monitoring) já disponíveis no Rocket.Chat de [atendimento](https://atendimento.camara.leg.br)
 
-Currently, two official plugins are available:
+## Arquitetura
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação utiliza React (biblioteca UI), Shadcn UI (componentes UI), Typescript (linguagem) e TailwindCSS (framework CSS), gerenciados pelo Vite (toolset).
 
-## Expanding the ESLint configuration
+Para criar o projeto, seguimos a documentação do [Shadcn](https://ui.shadcn.com/docs/installation/vite).
+
+## Colaboração com o projeto
+
+No projeto, utilizamos o VSCode (editor de texto), com os plugins:
+- ES7 React/Redux/React-Native snippets
+- Prettier
+
+Além disso, é preciso ter o Node.js (v22+) instalado.
+
+Comandos úteis:
+
+- `npm install` instalação das dependências
+- `npm run dev` iniciar servidor local com HMR (hot module replacement)
+- `npm run build` gerar a build para deploy
+- `npx shadcn@latest add <componente>` adiciona componente do shadcnui
+
+
+
+### Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
